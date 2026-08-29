@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WhatIDo from '../components/WhatIDo.astro';
+---
+
+<BaseLayout title="Home" description="Strategic portfolio and research practice">
+  <main class="page-shell">
+    <section class="hero">
+      <p class="eyebrow">Researcher • Strategist • Service Designer</p>
+      <h1>Helping teams turn complex user and service realities into clear action.</h1>
+      <p class="lede">
+        I design research programs, shape service ecosystems, and translate insight into decisions that improve experience, operations, and outcomes.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="/projects">View projects</a>
+        <a class="button button-secondary" href="/about">About me</a>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <div>
+        <p class="mini-label">Current focus</p>
+        <p>Research operations, mixed-method discovery, product strategy, and service transformation.</p>
+      </div>
+      <div>
+        <p class="mini-label">Approach</p>
+        <p>Evidence-driven, cross-functional, and grounded in real-world operational constraints.</p>
+      </div>
+    </section>
+
+    <WhatIDo />
+
+    <section class="featured-projects">
+      <div class="section-header">
+        <p class="label">Selected work</p>
+        <h2>Featured case studies</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="project-meta">Enterprise Journey Management</p>
+          <h3>Taxonomy enablement and design decision support</h3>
+          <p>Standardized how research findings were translated into platform-wide design and product improvements.</p>
+        </article>
+        <article class="project-card">
+          <p class="project-meta">USPS Mail Kiosks Bid</p>
+          <h3>Generative and evaluative research for a high-stakes public sector bid</h3>
+          <p>Led mixed-method research for an older demographic, navigating compliance, usability, and competitive constraints.</p>
+        </article>
+        <article class="project-card">
+          <p class="project-meta">Core POS Benchmarking</p>
+          <h3>Longitudinal UX benchmarking across 12 critical workflows</h3>
+          <p>Established repeatable quantitative metrics and validated performance in a live development environment.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

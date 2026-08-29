@@ -1,0 +1,65 @@
+---
+const serviceItems = [
+  {
+    title: 'Discovery',
+    description:
+      'I use mixed-method investigations to uncover user and business needs. This work reveals patterns and pain points that shape actionable opportunities. Insights guide both small design choices and larger strategic directions.'
+  },
+  {
+    title: 'Product Strategy',
+    description:
+      'I bridge qualitative and quantitative findings to create a clear understanding of users, business context, and market dynamics. By connecting insights across sources, I highlight opportunities that guide minor decisions and major strategic choices.'
+  },
+  {
+    title: 'Journey Management',
+    description:
+      'I map and manage end-to-end journeys across channels to uncover gaps, opportunities, and dependencies. These visualizations turn research into tangible stories teams can act on.'
+  },
+  {
+    title: 'Workshops & Alignment',
+    description:
+      'I facilitate sessions that bring teams together around a shared vision. Whether co-creating solutions or aligning priorities, I help groups make decisions efficiently.'
+  },
+  {
+    title: 'Impact Tracking',
+    description:
+      'I define KPIs and track how design decisions influence users and business outcomes. Analyzing results uncovers actionable insights that ensure our solutions deliver real value.'
+  },
+  {
+    title: 'Design Enablement',
+    description:
+      'I create visual templates and, when appropriate, scripts or AI-assisted tools to help teams work smarter and scale design practices. Repeatable processes free teams to focus on solving problems, not routine tasks.'
+  }
+];
+---
+
+<section class="what-i-do">
+  <div class="section-heading">
+    <span class="arrow">→</span>
+    <h2>WHAT I DO</h2>
+  </div>
+
+  {serviceItems.map((service) => (
+    <details class="service-item" open={service.title === 'Discovery'}>
+      <summary>
+        <span class="service-title">{service.title}</span>
+        <span class="toggle">+</span>
+      </summary>
+      <div class="service-body">
+        <p>{service.description}</p>
+      </div>
+    </details>
+  ))}
+</section>
+
+<script>
+  const items = document.querySelectorAll('.service-item');
+  items.forEach((item) => {
+    item.addEventListener('toggle', () => {
+      if (!item.open) return;
+      items.forEach((other) => {
+        if (other !== item) other.removeAttribute('open');
+      });
+    });
+  });
+</script>
