@@ -3,13 +3,40 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Enterprise Journey Management Practice" description="Project detail">
-  <main class="page-shell narrow">
-    <article class="content-block">
-      <p class="label">Project</p>
-      <h1>Enterprise Journey Management Practice</h1>
-      <p>Co-managed taxonomy and enablement work to standardize how research insights mapped to design decisions and platform-wide improvements.</p>
-      <p><strong>Role:</strong> Co-manager of taxonomy and enablement lead</p>
-      <p><strong>Focus:</strong> Experience taxonomies, insight tracking, cross-functional adoption, and TheyDo frameworks.</p>
+  <main class="page-shell project-detail-shell">
+    <article class="project-detail">
+      <div class="project-header">
+        <a href="/projects" class="back-link"><span aria-hidden="true">←</span> All case studies</a>
+        <h1>Enterprise Journey Management Practice</h1>
+        <p class="project-intro">Co-managed taxonomy and enablement work to standardize how research insights mapped to design decisions and platform-wide improvements.</p>
+      </div>
+
+      <div class="project-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">Client:</span>
+          <span class="meta-value">Enterprise research ops</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Role:</span>
+          <span class="meta-value">Co-manager of taxonomy & enablement lead</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Focus:</span>
+          <span class="meta-value">Taxonomies, adoption, TheyDo frameworks</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Preview:</span>
+          <a href="#" class="meta-link">View project →</a>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <section class="content-section">
+          <h2>Standardizing insight mapping and cross-functional adoption</h2>
+          <p>The challenge was to create a common language and taxonomy that would help teams move research insights into actionable design decisions. This required building both the framework and the cultural change to support it across an organization with many legacy practices.</p>
+          <p>By establishing clear taxonomies and enablement practices, we created a single source of truth for how insights were documented, shared, and applied to product and service improvements.</p>
+        </section>
+      </div>
     </article>
   </main>
 </BaseLayout>

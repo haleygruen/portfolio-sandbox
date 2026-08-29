@@ -3,14 +3,40 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Cross-Industry JTBD Survey & Card Sort" description="Project detail">
-  <main class="page-shell narrow">
-    <article class="content-block">
-      <p class="label">Project</p>
-      <h1>Cross-Industry JTBD Survey & Card Sort</h1>
-      <p>Ran a multi-industry research study to surface patterns in customer jobs, pains, and priorities across different operational contexts.</p>
-      <p><strong>Role:</strong> Research Lead</p>
-      <p><strong>Focus:</strong> Job-to-be-done interviews, survey design, affinity clustering, and comparative analysis.</p>
-      <p><strong>Outcome:</strong> Enabled a sharper understanding of similarity and difference across markets, informing prioritization and positioning.</p>
+  <main class="page-shell project-detail-shell">
+    <article class="project-detail">
+      <div class="project-header">
+        <a href="/projects" class="back-link"><span aria-hidden="true">←</span> All case studies</a>
+        <h1>Cross-Industry JTBD Survey & Card Sort</h1>
+        <p class="project-intro">Ran a multi-industry research study to surface patterns in customer jobs, pains, and priorities across different operational contexts.</p>
+      </div>
+
+      <div class="project-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">Client:</span>
+          <span class="meta-value">Product strategy team</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Role:</span>
+          <span class="meta-value">Research lead</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Focus:</span>
+          <span class="meta-value">JTBD interviews, survey design, affinity clustering</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Preview:</span>
+          <a href="#" class="meta-link">View project →</a>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <section class="content-section">
+          <h2>Uncovering shared and different customer needs across industries</h2>
+          <p>To inform positioning and prioritization, the product team needed to understand how customer jobs, pains, and priorities varied across different industries. We designed and executed a multi-industry research study using job interviews, surveys, and card sorting.</p>
+          <p>The research revealed both surprising commonalities and important differences across markets, which enabled sharper prioritization and a more nuanced go-to-market strategy.</p>
+        </section>
+      </div>
     </article>
   </main>
 </BaseLayout>

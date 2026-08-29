@@ -3,14 +3,40 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Standardized Product UX Scorecard" description="Project detail">
-  <main class="page-shell narrow">
-    <article class="content-block">
-      <p class="label">Project</p>
-      <h1>Standardized Product UX Scorecard</h1>
-      <p>Designed a repeatable scoring framework so teams could compare product quality across platforms, workflows, and release cycles.</p>
-      <p><strong>Role:</strong> Research and Experience Metrics Lead</p>
-      <p><strong>Focus:</strong> UX measurement, benchmarking design, stakeholder enablement, and scorecard rollout.</p>
-      <p><strong>Outcome:</strong> Created a common language for evaluating product experience and accelerating prioritization conversations.</p>
+  <main class="page-shell project-detail-shell">
+    <article class="project-detail">
+      <div class="project-header">
+        <a href="/projects" class="back-link"><span aria-hidden="true">←</span> All case studies</a>
+        <h1>Standardized Product UX Scorecard</h1>
+        <p class="project-intro">Designed a repeatable scoring framework so teams could compare product quality across platforms, workflows, and release cycles.</p>
+      </div>
+
+      <div class="project-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">Client:</span>
+          <span class="meta-value">Product management team</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Role:</span>
+          <span class="meta-value">Research & experience metrics lead</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Focus:</span>
+          <span class="meta-value">UX measurement, benchmarking design, stakeholder enablement</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Preview:</span>
+          <a href="#" class="meta-link">View project →</a>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <section class="content-section">
+          <h2>Creating a common language for product quality evaluation</h2>
+          <p>Different teams were using different methods to evaluate product quality, which made it difficult to compare across platforms and prioritize improvements. We needed to design a standardized, repeatable scorecard that would give teams a shared framework.</p>
+          <p>The scorecard was designed to be practical and easy to use, while still being rigorous enough to support important prioritization decisions. Once rolled out, it accelerated conversations and helped teams align on what "good" looks like.</p>
+        </section>
+      </div>
     </article>
   </main>
 </BaseLayout>

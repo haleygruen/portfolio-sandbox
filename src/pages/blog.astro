@@ -2,16 +2,54 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Blog" description="Blog and reflections">
-  <main class="page-shell narrow">
-    <section class="content-block">
-      <p class="label">Blog</p>
-      <h1>Writing and reflection</h1>
-      <p>Notes on research practice, service design, process improvement, and the messy realities of turning insight into change.</p>
-      <ul class="link-list">
-        <li><a href="/blog/portfolio-positioning">Portfolio positioning and narrative clarity</a></li>
-        <li><a href="/blog/research-methodology-reflection">Research methodology reflections</a></li>
-      </ul>
+<BaseLayout title="Blog" description="Journal and reflections">
+  <main class="page-shell blog-page-shell">
+    <section class="blog-page">
+      <div class="blog-header">
+        <div>
+          <p class="section-kicker">Journal</p>
+          <h1>Journal</h1>
+        </div>
+        <p class="blog-intro">
+          I love to write about design, research, and product thinking whenever I get a chance. I post new content every week.
+        </p>
+      </div>
+
+      <div class="category-row" aria-label="Blog categories">
+        <span class="category-pill">Staff Picks</span>
+        <span class="category-pill">Design Tools</span>
+        <span class="category-pill">Inspiration</span>
+        <span class="category-pill">AI Tools</span>
+        <span class="category-pill">Coding</span>
+        <span class="category-pill">Productivity</span>
+      </div>
+
+      <div class="blog-list">
+        <a class="blog-item" href="/blog/portfolio-positioning">
+          <span class="blog-date">May 1, 2024</span>
+          <h3>Portfolio positioning and narrative clarity</h3>
+        </a>
+        <a class="blog-item" href="/blog/research-methodology-reflection">
+          <span class="blog-date">Apr 15, 2024</span>
+          <h3>Research methodology reflections</h3>
+        </a>
+        <a class="blog-item" href="/blog/portfolio-positioning">
+          <span class="blog-date">Nov 14, 2024</span>
+          <h3>Blueprint fidelity: between paper prototype and finished product</h3>
+        </a>
+        <a class="blog-item" href="/blog/research-methodology-reflection">
+          <span class="blog-date">Dec 11, 2024</span>
+          <h3>Brushes are underrated and here is why</h3>
+        </a>
+        <a class="blog-item" href="/blog/portfolio-positioning">
+          <span class="blog-date">Jan 8, 2025</span>
+          <h3>Cinema 4D visual explorations by David Milan</h3>
+        </a>
+        <a class="blog-item" href="/blog/research-methodology-reflection">
+          <span class="blog-date">Sep 10, 2024</span>
+          <h3>Designers on what makes a good branding</h3>
+        </a>
+      </div>
     </section>
   </main>
 </BaseLayout>

@@ -2,13 +2,84 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="About" description="About the portfolio">
-  <main class="page-shell narrow">
-    <section class="content-block">
-      <p class="label">About</p>
-      <h1>Researcher, strategist, and service designer.</h1>
-      <p>I work at the intersection of user insight, operational systems, and product decisions. My work blends qualitative rigor with strategic thinking to help teams move from patterns to action.</p>
-      <p>I bring experience across research operations, journey and service design, cross-functional enablement, and product strategy. I value clarity, evidence, and practical transformation.</p>
+<BaseLayout title="About" description="About Haley Gruensfelder">
+  <main class="page-shell about-page-shell">
+    <section class="about-page">
+      <div class="about-hero">
+        <div class="about-copy">
+          <p class="section-kicker">About</p>
+          <h1>I love design more than my vintage action figures.</h1>
+        </div>
+        <div class="about-photo" aria-label="Portrait placeholder"></div>
+      </div>
+
+      <p class="about-lead">
+        I’m passionate about my work because I believe good design can make a real difference in the world — it can help businesses attract new customers, build stronger relationships, and create a more positive brand experience.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-panel">
+          <div class="panel-label">
+            <span class="panel-mark">✦</span>
+            <span>Experience</span>
+          </div>
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <span class="timeline-year">2023 — Current</span>
+              <strong>Lead Designer — Google</strong>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2019 — 2022</span>
+              <strong>Senior UI Designer — Uber</strong>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2018 — 2019</span>
+              <strong>Junior UX Designer — Microsoft</strong>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2017 — 2018</span>
+              <strong>Junior UX Designer — Clonify</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-panel">
+          <div class="panel-label">
+            <span class="panel-mark">✦</span>
+            <span>Why choose me</span>
+          </div>
+          <div class="benefits-grid">
+            <div class="benefit-item">
+              <div class="benefit-head">
+                <span class="benefit-icon">◎</span>
+                <h3>Working globally</h3>
+              </div>
+              <p>I've worked with clients from around the world, and my process is flexible wherever you are.</p>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-head">
+                <span class="benefit-icon">◎</span>
+                <h3>Latest tech</h3>
+              </div>
+              <p>Always exploring the best design practices and tooling to create thoughtful, modern digital experiences.</p>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-head">
+                <span class="benefit-icon">◎</span>
+                <h3>No-code enthusiast</h3>
+              </div>
+              <p>I love building elegant, fast-moving web experiences that are easy to customize and ship.</p>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-head">
+                <span class="benefit-icon">◎</span>
+                <h3>Right on time</h3>
+              </div>
+              <p>Clear communication, strong collaboration, and dependable delivery are core to how I work.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </BaseLayout>

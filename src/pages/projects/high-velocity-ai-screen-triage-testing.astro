@@ -3,14 +3,40 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="High-Velocity AI Screen Triage Testing" description="Project detail">
-  <main class="page-shell narrow">
-    <article class="content-block">
-      <p class="label">Project</p>
-      <h1>High-Velocity AI Screen Triage Testing</h1>
-      <p>Evaluated how AI-supported triage workflows performed under high-volume, time-constrained conditions to inform product readiness and confidence.</p>
-      <p><strong>Role:</strong> Experimental Researcher</p>
-      <p><strong>Focus:</strong> Rapid testing, triage flow validation, risk analysis, and operational feedback loops.</p>
-      <p><strong>Outcome:</strong> Provided evidence-backed guidance for where AI could augment decision-making and where human oversight remained essential.</p>
+  <main class="page-shell project-detail-shell">
+    <article class="project-detail">
+      <div class="project-header">
+        <a href="/projects" class="back-link"><span aria-hidden="true">←</span> All case studies</a>
+        <h1>High-Velocity AI Screen Triage Testing</h1>
+        <p class="project-intro">Evaluated how AI-supported triage workflows performed under high-volume, time-constrained conditions to inform product readiness and confidence.</p>
+      </div>
+
+      <div class="project-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">Client:</span>
+          <span class="meta-value">AI product team</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Role:</span>
+          <span class="meta-value">Experimental researcher</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Focus:</span>
+          <span class="meta-value">Rapid testing, triage validation, risk analysis</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Preview:</span>
+          <a href="#" class="meta-link">View project →</a>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <section class="content-section">
+          <h2>Testing AI-augmented decision-making under realistic operational conditions</h2>
+          <p>Before releasing an AI-augmented triage workflow to production, the team needed evidence that it would perform reliably under real operational stress. We designed rapid experiments that simulated high-volume, time-constrained conditions and measured both accuracy and user confidence.</p>
+          <p>The testing revealed areas where the AI could confidently augment human decision-making and areas where human oversight remained essential. This evidence-backed approach reduced risk and helped the team launch with confidence.</p>
+        </section>
+      </div>
     </article>
   </main>
 </BaseLayout>

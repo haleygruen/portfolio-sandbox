@@ -1,56 +1,116 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import WhatIDo from '../components/WhatIDo.astro';
 ---
 
 <BaseLayout title="Home" description="Strategic portfolio and research practice">
-  <main class="page-shell">
-    <section class="hero">
-      <p class="eyebrow">Researcher • Strategist • Service Designer</p>
-      <h1>Helping teams turn complex user and service realities into clear action.</h1>
-      <p class="lede">
-        I design research programs, shape service ecosystems, and translate insight into decisions that improve experience, operations, and outcomes.
-      </p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="/projects">View projects</a>
-        <a class="button button-secondary" href="/about">About me</a>
+  <main class="page-shell home-shell">
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <p class="eyebrow">Researcher • Strategist • Service Designer</p>
+        <h1>Haley Gruensfelder.<br />Researcher and design strategist.</h1>
+        <p class="lede">
+          I create research programs and service experiences that turn unstructured complexity into decisions that teams can act on.
+        </p>
+        <div class="hero-links">
+          <a href="/projects">Projects</a>
+          <a href="/about">About</a>
+          <a href="mailto:hello@example.com">Contact</a>
+        </div>
       </div>
     </section>
 
-    <section class="intro-strip">
-      <div>
-        <p class="mini-label">Current focus</p>
-        <p>Research operations, mixed-method discovery, product strategy, and service transformation.</p>
+    <section class="content-section services-section">
+      <div class="section-label-wrap">
+        <span class="section-mark">●</span>
+        <p class="section-kicker">Services</p>
       </div>
-      <div>
-        <p class="mini-label">Approach</p>
-        <p>Evidence-driven, cross-functional, and grounded in real-world operational constraints.</p>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-topline">
+            <span class="service-icon">✦</span>
+            <h3>UX Research</h3>
+          </div>
+          <p>Mixed-method discovery and evaluation that surfaces customer truths, uncovering friction, unmet needs, and the signals that help teams prioritize well.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-topline">
+            <span class="service-icon">✦</span>
+            <h3>Strategy</h3>
+          </div>
+          <p>Translating evidence into product direction, strategic opportunities, and a clear path for decision-making across product, operations, and service teams.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-topline">
+            <span class="service-icon">✦</span>
+            <h3>Service Design</h3>
+          </div>
+          <p>I map the systems behind the experience, aligning people, processes, and touchpoints to reduce friction and improve service outcomes.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-topline">
+            <span class="service-icon">✦</span>
+            <h3>Workshops</h3>
+          </div>
+          <p>Facilitated alignment sessions that bring cross-functional groups together around insight, trade-offs, and decision frameworks.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-topline">
+            <span class="service-icon">✦</span>
+            <h3>Impact Tracking</h3>
+          </div>
+          <p>Designing scorecards, benchmark systems, and measurement frameworks that turn experience work into visible operational value.</p>
+        </article>
       </div>
     </section>
 
-    <WhatIDo />
-
-    <section class="featured-projects">
-      <div class="section-header">
-        <p class="label">Selected work</p>
-        <h2>Featured case studies</h2>
+    <section class="content-section projects-section">
+      <div class="section-label-wrap">
+        <span class="section-mark">●</span>
+        <p class="section-kicker">Work</p>
       </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-meta">Enterprise Journey Management</p>
-          <h3>Taxonomy enablement and design decision support</h3>
-          <p>Standardized how research findings were translated into platform-wide design and product improvements.</p>
-        </article>
-        <article class="project-card">
-          <p class="project-meta">USPS Mail Kiosks Bid</p>
-          <h3>Generative and evaluative research for a high-stakes public sector bid</h3>
-          <p>Led mixed-method research for an older demographic, navigating compliance, usability, and competitive constraints.</p>
-        </article>
-        <article class="project-card">
-          <p class="project-meta">Core POS Benchmarking</p>
-          <h3>Longitudinal UX benchmarking across 12 critical workflows</h3>
-          <p>Established repeatable quantitative metrics and validated performance in a live development environment.</p>
-        </article>
+      <div class="project-list">
+        <a class="project-row" href="/projects/enterprise-journey-management-practice">
+          <span class="project-name">Enterprise Journey Management</span>
+          <span class="project-tags"><span>UX Research</span><span>Service Design</span><span>Strategy</span></span>
+        </a>
+        <a class="project-row" href="/projects/usps-mail-kiosks-bid-discovery">
+          <span class="project-name">USPS Mail Kiosks</span>
+          <span class="project-tags"><span>Discovery</span><span>Evaluation</span><span>Bid Support</span></span>
+        </a>
+        <a class="project-row" href="/projects/core-pos-benchmarking-longitudinal-audit">
+          <span class="project-name">Core POS Benchmarking</span>
+          <span class="project-tags"><span>Benchmarking</span><span>Metrics</span><span>UX</span></span>
+        </a>
+        <a class="project-row" href="/projects/go-to-market-deal-making-process-overhaul">
+          <span class="project-name">Go-To-Market Process Overhaul</span>
+          <span class="project-tags"><span>Research</span><span>Ops</span><span>Strategy</span></span>
+        </a>
+        <a class="project-row" href="/projects/legacy-supply-chain-product-modernization">
+          <span class="project-name">Legacy Supply Chain Modernization</span>
+          <span class="project-tags"><span>Product</span><span>Transformation</span><span>Research</span></span>
+        </a>
+      </div>
+      <a class="all-link" href="/projects">All case studies <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="content-section journal-section">
+      <div class="section-label-wrap">
+        <span class="section-mark">●</span>
+        <p class="section-kicker">Journal</p>
+      </div>
+      <div class="journal-list">
+        <a class="journal-item" href="/blog/portfolio-positioning">
+          <span class="journal-date">Aug 29, 2026</span>
+          <h3>Portfolio positioning and narrative clarity</h3>
+        </a>
+        <a class="journal-item" href="/blog/research-methodology-reflection">
+          <span class="journal-date">Aug 20, 2026</span>
+          <h3>Research methodology reflections</h3>
+        </a>
+        <a class="journal-item" href="/blog/portfolio-positioning">
+          <span class="journal-date">Aug 12, 2026</span>
+          <h3>How service ecosystems shape research quality</h3>
+        </a>
       </div>
     </section>
   </main>
