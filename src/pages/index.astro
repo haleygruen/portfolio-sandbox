@@ -8,14 +8,14 @@ import { getUrl } from '../utils/nav';
     <section class="hero-panel">
       <div class="hero-copy">
         <p class="eyebrow">Researcher • Strategist • Service Designer</p>
-        <h1>Haley Gruensfelder.<br />Researcher and design strategist.</h1>
+        <h1>I make complex systems easier to understand—and easier to change.</h1>
         <p class="lede">
-          I create research programs and service experiences that turn unstructured complexity into decisions that teams can act on.
+          I’m a service designer and UX researcher working across research, strategy, and service design. I help teams understand what’s really happening, uncover opportunities, and turn complexity into clearer decisions and better ways of working.
         </p>
         <div class="hero-links">
-          <a href={getUrl('/projects')}>Projects</a>
-          <a href={getUrl('/about')}>About</a>
-          <a href={getUrl('/contact')}>Contact</a>
+          <a href={getUrl('/projects')}>View my work</a>
+          <a href={getUrl('/about')}>About me</a>
+          <a href={getUrl('/contact')}>Get in touch</a>
         </div>
       </div>
     </section>
@@ -23,95 +23,173 @@ import { getUrl } from '../utils/nav';
     <section class="content-section services-section">
       <div class="section-label-wrap">
         <span class="section-mark">●</span>
-        <p class="section-kicker">Services</p>
+        <p class="section-kicker">WHAT I DO</p>
       </div>
-      <div class="services-grid">
-        <article class="service-card">
-          <div class="service-topline">
-            <span class="service-icon">✦</span>
-            <h3>UX Research</h3>
-          </div>
-          <p>Mixed-method discovery and evaluation that surfaces customer truths, uncovering friction, unmet needs, and the signals that help teams prioritize well.</p>
-        </article>
-        <article class="service-card">
-          <div class="service-topline">
-            <span class="service-icon">✦</span>
-            <h3>Strategy</h3>
-          </div>
-          <p>Translating evidence into product direction, strategic opportunities, and a clear path for decision-making across product, operations, and service teams.</p>
-        </article>
-        <article class="service-card">
-          <div class="service-topline">
-            <span class="service-icon">✦</span>
-            <h3>Service Design</h3>
-          </div>
-          <p>I map the systems behind the experience, aligning people, processes, and touchpoints to reduce friction and improve service outcomes.</p>
-        </article>
-        <article class="service-card">
-          <div class="service-topline">
-            <span class="service-icon">✦</span>
-            <h3>Workshops</h3>
-          </div>
-          <p>Facilitated alignment sessions that bring cross-functional groups together around insight, trade-offs, and decision frameworks.</p>
-        </article>
-        <article class="service-card">
-          <div class="service-topline">
-            <span class="service-icon">✦</span>
-            <h3>Impact Tracking</h3>
-          </div>
-          <p>Designing scorecards, benchmark systems, and measurement frameworks that turn experience work into visible operational value.</p>
-        </article>
+      <div class="services-intro">
+        <h2>Research, strategy, and service design for problems that don’t come with simple answers.</h2>
+        <p>
+          I work where the problem is ambiguous, the system is complex, or the path forward isn’t obvious. My approach combines research and strategic thinking to make sense of what’s happening—and create a clearer way forward.
+        </p>
+      </div>
+      <div class="service-list">
+        <details class="service-item" open>
+          <summary>
+            <span class="service-summary">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"></circle><line x1="16" y1="16" x2="21" y2="21"></line></svg>
+              </span>
+              <span class="service-title">Research &amp; Discovery</span>
+            </span>
+            <span class="toggle-indicator">+</span>
+          </summary>
+          <p>I uncover the needs, behaviors, motivations, and constraints that shape a problem.</p>
+          <p class="service-note">Why it matters: The right insight can change the question before it changes the solution.</p>
+        </details>
+
+        <details class="service-item">
+          <summary>
+            <span class="service-summary">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"></path><path d="M12 3v18"></path><path d="M4.5 4.5l15 15"></path><path d="M19.5 4.5l-15 15"></path></svg>
+              </span>
+              <span class="service-title">Service Design</span>
+            </span>
+            <span class="toggle-indicator">+</span>
+          </summary>
+          <p>I map the relationships between people, processes, products, and systems to understand how an experience actually works.</p>
+          <p class="service-note">Why it matters: Seeing the whole service reveals opportunities that are easy to miss from a single touchpoint.</p>
+        </details>
+
+        <details class="service-item">
+          <summary>
+            <span class="service-summary">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18l7-7 3 3 7-7"></path><path d="M20 7h-5V2"></path><path d="M4 18h16"></path></svg>
+              </span>
+              <span class="service-title">Strategy &amp; Synthesis</span>
+            </span>
+            <span class="toggle-indicator">+</span>
+          </summary>
+          <p>I turn complex information into patterns, priorities, and direction that teams can use.</p>
+          <p class="service-note">Why it matters: Research creates value when it helps people make better decisions.</p>
+        </details>
+
+        <details class="service-item">
+          <summary>
+            <span class="service-summary">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l9 4 9-4-9-4-9 4z"></path><path d="M3 6v12l9 4 9-4V6"></path><path d="M12 10v12"></path></svg>
+              </span>
+              <span class="service-title">Journey Management</span>
+            </span>
+            <span class="toggle-indicator">+</span>
+          </summary>
+          <p>I develop frameworks and practices that help organizations understand, maintain, and act on customer journeys over time.</p>
+          <p class="service-note">Why it matters: Journey thinking becomes more powerful when it becomes part of how an organization works.</p>
+        </details>
+
+        <details class="service-item">
+          <summary>
+            <span class="service-summary">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="9.5" cy="7" r="3.5"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </span>
+              <span class="service-title">Facilitation &amp; Alignment</span>
+            </span>
+            <span class="toggle-indicator">+</span>
+          </summary>
+          <p>I help teams make sense of complexity, challenge assumptions, and build shared understanding.</p>
+          <p class="service-note">Why it matters: Progress is easier when the people making decisions have a shared view of the problem.</p>
+        </details>
+
+        <details class="service-item">
+          <summary>
+            <span class="service-summary">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"></path><path d="M4 12h10"></path><path d="M4 17h16"></path><path d="M18 11l2 1-2 1"></path></svg>
+              </span>
+              <span class="service-title">Prioritization &amp; Decision Support</span>
+            </span>
+            <span class="toggle-indicator">+</span>
+          </summary>
+          <p>I create structured ways to evaluate opportunities, compare needs, and focus effort.</p>
+          <p class="service-note">Why it matters: Clear criteria help teams move from a long list of possibilities to purposeful action.</p>
+        </details>
       </div>
     </section>
 
     <section class="content-section projects-section">
       <div class="section-label-wrap">
         <span class="section-mark">●</span>
-        <p class="section-kicker">Work</p>
+        <p class="section-kicker">Selected Work</p>
       </div>
-      <div class="project-list">
-        <a class="project-row" href={getUrl('/projects/enterprise-journey-management-practice')}>
-          <span class="project-name">Enterprise Journey Management</span>
-          <span class="project-tags"><span>UX Research</span><span>Service Design</span><span>Strategy</span></span>
+      <div class="services-intro projects-intro">
+        <h2>A selection of problems I’ve helped teams understand, navigate, and move forward.</h2>
+        <p>
+          My work spans service design, UX research, strategy, and organizational change—from improving complex internal processes to evaluating new concepts and understanding customer needs.
+        </p>
+      </div>
+      <div class="work-grid">
+        <a class="work-card" href={getUrl('/projects/enterprise-journey-management-practice')}>
+          <div class="work-thumb thumb-1"></div>
+          <div class="work-meta">
+            <div class="work-topline">UX Research · Service Design · Strategy</div>
+            <h3>Enterprise Journey Management</h3>
+          </div>
         </a>
-        <a class="project-row" href={getUrl('/projects/usps-mail-kiosks-bid-discovery')}>
-          <span class="project-name">USPS Mail Kiosks</span>
-          <span class="project-tags"><span>Discovery</span><span>Evaluation</span><span>Bid Support</span></span>
+        <a class="work-card" href={getUrl('/projects/go-to-market-deal-making-process-overhaul')}>
+          <div class="work-thumb thumb-2"></div>
+          <div class="work-meta">
+            <div class="work-topline">Research · Service Design · Strategy</div>
+            <h3>Go-To-Market Process Overhaul</h3>
+          </div>
         </a>
-        <a class="project-row" href={getUrl('/projects/core-pos-benchmarking-longitudinal-audit')}>
-          <span class="project-name">Core POS Benchmarking</span>
-          <span class="project-tags"><span>Benchmarking</span><span>Metrics</span><span>UX</span></span>
+        <a class="work-card" href={getUrl('/projects/usps-mail-kiosks-bid-discovery')}>
+          <div class="work-thumb thumb-3"></div>
+          <div class="work-meta">
+            <div class="work-topline">Discovery · Evaluation · Bid Support</div>
+            <h3>USPS Mail Kiosks</h3>
+          </div>
         </a>
-        <a class="project-row" href={getUrl('/projects/go-to-market-deal-making-process-overhaul')}>
-          <span class="project-name">Go-To-Market Process Overhaul</span>
-          <span class="project-tags"><span>Research</span><span>Ops</span><span>Strategy</span></span>
-        </a>
-        <a class="project-row" href={getUrl('/projects/legacy-supply-chain-product-modernization')}>
-          <span class="project-name">Legacy Supply Chain Modernization</span>
-          <span class="project-tags"><span>Product</span><span>Transformation</span><span>Research</span></span>
+        <a class="work-card" href={getUrl('/projects/branding-studio-mvp-validation')}>
+          <div class="work-thumb thumb-4"></div>
+          <div class="work-meta">
+            <div class="work-topline">Concept Testing · Research · Validation</div>
+            <h3>Branding Studio MVP Validation</h3>
+          </div>
         </a>
       </div>
-      <a class="all-link" href={getUrl('/projects')}>All case studies <span aria-hidden="true">→</span></a>
+      <a class="all-link" href={getUrl('/projects')}>View all projects <span aria-hidden="true">→</span></a>
     </section>
 
     <section class="content-section journal-section">
       <div class="section-label-wrap">
         <span class="section-mark">●</span>
-        <p class="section-kicker">Journal</p>
+        <p class="section-kicker">How I Work</p>
       </div>
-      <div class="journal-list">
-        <a class="journal-item" href={getUrl('/blog/portfolio-positioning')}>
-          <span class="journal-date">Aug 29, 2026</span>
-          <h3>Portfolio positioning and narrative clarity</h3>
-        </a>
-        <a class="journal-item" href={getUrl('/blog/research-methodology-reflection')}>
-          <span class="journal-date">Aug 20, 2026</span>
-          <h3>Research methodology reflections</h3>
-        </a>
-        <a class="journal-item" href={getUrl('/blog/portfolio-positioning')}>
-          <span class="journal-date">Aug 12, 2026</span>
-          <h3>How service ecosystems shape research quality</h3>
-        </a>
+      <div class="services-intro">
+        <h2>Start with the problem. Understand the system. Find the opportunity.</h2>
+        <p>
+          I’m less interested in jumping straight to solutions than in understanding what’s underneath the problem.
+        </p>
+        <p>
+          That means looking beyond individual touchpoints to understand the people, processes, incentives, technology, and organizational realities shaping an experience.
+        </p>
+        <p>
+          From there, I bring research and design together to create clarity—whether that means identifying an unmet need, reframing a problem, improving a process, or giving a team a better way to make decisions.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section cta-section">
+      <div class="section-label-wrap">
+        <span class="section-mark">●</span>
+        <p class="section-kicker">Get in touch</p>
+      </div>
+      <div class="cta-panel compact-cta">
+        <h2>Have a complicated problem worth understanding?</h2>
+        <p>Let’s figure out what’s really happening—and what could happen next.</p>
+        <a class="text-link" href={getUrl('/contact')}>Get in touch <span aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>
