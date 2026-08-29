@@ -2,14 +2,29 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Portfolio positioning" description="Blog post">
-  <main class="page-shell narrow">
-    <article class="content-block">
-      <p class="label">Blog</p>
-      <h1>Portfolio positioning and narrative clarity</h1>
-      <p>Strong portfolio work is not just a catalogue of outputs. It is a disciplined story about how you work, what you value, and the kinds of decisions you help teams make.</p>
-      <p>For a researcher and service designer, the best framing often sits between full case-study detail and strategic summary. It should show rigor without drowning the reader in process, and it should emphasize outcomes without flattening complexity.</p>
-      <p>I’ve been refining my portfolio to make that balance clearer: showing practical research methods, service design thinking, and the operational realities of transformation work.</p>
+<BaseLayout title="Portfolio positioning and narrative clarity" description="Blog post">
+  <main class="page-shell blog-post-shell">
+    <article class="blog-post">
+      <div class="blog-post-header">
+        <a href="/blog" class="back-link"><span aria-hidden="true">←</span> Back to blog</a>
+        <h1>Portfolio positioning and narrative clarity</h1>
+      </div>
+
+      <div class="blog-post-content">
+        <p class="blog-lede">Strong portfolio work is not just a catalogue of outputs. It is a disciplined story about how you work, what you value, and the kinds of decisions you help teams make.</p>
+
+        <section class="blog-section">
+          <h2>Balancing detail and narrative</h2>
+          <p>For a researcher and service designer, the best framing often sits between full case-study detail and strategic summary. It should show rigor without drowning the reader in process, and it should emphasize outcomes without flattening complexity.</p>
+          <p>I’ve been refining my portfolio to make that balance clearer: showing practical research methods, service design thinking, and the operational realities of transformation work.</p>
+        </section>
+
+        <section class="blog-section">
+          <h2>Why portfolio structure matters</h2>
+          <p>Your portfolio tells a story about the kind of partner and thinker you are. It reveals what you prioritize, how you explain complexity, and whether you understand the constraints of the people reading it.</p>
+          <p>The strongest portfolios I’ve seen don’t try to show everything. They show the work that best represents how you think and what you can deliver.</p>
+        </section>
+      </div>
     </article>
   </main>
 </BaseLayout>

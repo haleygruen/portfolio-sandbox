@@ -2,14 +2,29 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Research methodology reflection" description="Blog post">
-  <main class="page-shell narrow">
-    <article class="content-block">
-      <p class="label">Blog</p>
-      <h1>Research methodology reflections</h1>
-      <p>Good research methods are not chosen for elegance alone. They are chosen to answer a decision, illuminate a gap, or surface the conditions under which a service or product can work.</p>
-      <p>In practice, that means combining interviews, observations, benchmarking, card sorts, surveys, and journey mapping in ways that reflect both the customer experience and the operational system behind it.</p>
-      <p>What matters most is not the method itself, but whether the evidence is credible, actionable, and connected to the actual work of changing an experience.</p>
+<BaseLayout title="Research methodology reflections" description="Blog post">
+  <main class="page-shell blog-post-shell">
+    <article class="blog-post">
+      <div class="blog-post-header">
+        <a href="/blog" class="back-link"><span aria-hidden="true">←</span> Back to blog</a>
+        <h1>Research methodology reflections</h1>
+      </div>
+
+      <div class="blog-post-content">
+        <p class="blog-lede">Good research methods are not chosen for elegance alone. They are chosen to answer a decision, illuminate a gap, or surface the conditions under which a service or product can work.</p>
+
+        <section class="blog-section">
+          <h2>Research is a means, not an end</h2>
+          <p>In practice, combining interviews, observations, benchmarking, card sorts, surveys, and journey mapping works best when it reflects both the customer experience and the operational system behind it.</p>
+          <p>What matters most is not the method itself, but whether the evidence is credible, actionable, and connected to the actual work of changing an experience.</p>
+        </section>
+
+        <section class="blog-section">
+          <h2>Methods are tools for decision-making</h2>
+          <p>The strongest research programs align method selection to the decisions that need to be made. This means being rigorous about what you need to know and pragmatic about the time and resources available.</p>
+          <p>It also means being willing to combine quantitative and qualitative approaches, to run multiple small tests rather than one large study, and to learn continuously as the work unfolds.</p>
+        </section>
+      </div>
     </article>
   </main>
 </BaseLayout>
