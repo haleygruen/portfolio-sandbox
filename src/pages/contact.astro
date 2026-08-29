@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getUrl } from '../utils/nav';
+---
+
+<BaseLayout title="Contact" description="Get in touch">
+  <main class="page-shell contact-shell">
+    <section class="content-section contact-section">
+      <div class="contact-grid">
+        <div class="contact-copy">
+          <p class="section-kicker">Contact</p>
+          <h1>Have an idea? Let’s connect.</h1>
+          <p class="lede">
+            I’m eager to hear about your goals and discuss how research, strategy, or service design can help move your work forward.
+          </p>
+          <div class="contact-actions">
+            <a class="primary-link" href="mailto:hello@example.com">Email me</a>
+            <a class="secondary-link" href={getUrl('/projects')}>View projects</a>
+          </div>
+        </div>
+
+        <div class="contact-panel">
+          <h2>Let’s make something valuable.</h2>
+          <p>
+            Available for strategic advisory, research partnerships, and product or service design collaborations.
+          </p>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><span>Focus</span><strong>Research, strategy, service design</strong></li>
+            <li><span>Availability</span><strong>Open for new projects</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
