@@ -1,12 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getUrl } from '../../utils/nav';
 ---
 
 <BaseLayout title="Enterprise Journey Management Practice" description="Project detail">
   <main class="page-shell project-detail-shell">
     <article class="project-detail">
       <div class="project-header">
-        <a href="/projects" class="back-link"><span aria-hidden="true">←</span> All case studies</a>
+        <a href={getUrl('/projects')} class="back-link"><span aria-hidden="true">←</span> All case studies</a>
         <h1>Enterprise Journey Management Practice</h1>
         <p class="project-intro">Co-managed taxonomy and enablement work to standardize how research insights mapped to design decisions and platform-wide improvements.</p>
       </div>

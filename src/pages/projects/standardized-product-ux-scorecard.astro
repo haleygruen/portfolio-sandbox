@@ -1,12 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getUrl } from '../../utils/nav';
 ---
 
 <BaseLayout title="Standardized Product UX Scorecard" description="Project detail">
   <main class="page-shell project-detail-shell">
     <article class="project-detail">
       <div class="project-header">
-        <a href="/projects" class="back-link"><span aria-hidden="true">←</span> All case studies</a>
+        <a href={getUrl('/projects')} class="back-link"><span aria-hidden="true">←</span> All case studies</a>
         <h1>Standardized Product UX Scorecard</h1>
         <p class="project-intro">Designed a repeatable scoring framework so teams could compare product quality across platforms, workflows, and release cycles.</p>
       </div>

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getUrl } from '../utils/nav';
 ---
 
 <BaseLayout title="Blog" description="Journal and reflections">
@@ -25,27 +26,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <div class="blog-list">
-        <a class="blog-item" href="/blog/portfolio-positioning">
+        <a class="blog-item" href={getUrl('/blog/portfolio-positioning')}>
           <span class="blog-date">May 1, 2024</span>
           <h3>Portfolio positioning and narrative clarity</h3>
         </a>
-        <a class="blog-item" href="/blog/research-methodology-reflection">
+        <a class="blog-item" href={getUrl('/blog/research-methodology-reflection')}>
           <span class="blog-date">Apr 15, 2024</span>
           <h3>Research methodology reflections</h3>
         </a>
-        <a class="blog-item" href="/blog/portfolio-positioning">
+        <a class="blog-item" href={getUrl('/blog/portfolio-positioning')}>
           <span class="blog-date">Nov 14, 2024</span>
           <h3>Blueprint fidelity: between paper prototype and finished product</h3>
         </a>
-        <a class="blog-item" href="/blog/research-methodology-reflection">
+        <a class="blog-item" href={getUrl('/blog/research-methodology-reflection')}>
           <span class="blog-date">Dec 11, 2024</span>
           <h3>Brushes are underrated and here is why</h3>
         </a>
-        <a class="blog-item" href="/blog/portfolio-positioning">
+        <a class="blog-item" href={getUrl('/blog/portfolio-positioning')}>
           <span class="blog-date">Jan 8, 2025</span>
           <h3>Cinema 4D visual explorations by David Milan</h3>
         </a>
-        <a class="blog-item" href="/blog/research-methodology-reflection">
+        <a class="blog-item" href={getUrl('/blog/research-methodology-reflection')}>
           <span class="blog-date">Sep 10, 2024</span>
           <h3>Designers on what makes a good branding</h3>
         </a>

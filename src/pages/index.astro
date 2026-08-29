@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getUrl } from '../utils/nav';
 ---
 
 <BaseLayout title="Home" description="Strategic portfolio and research practice">
@@ -12,8 +13,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           I create research programs and service experiences that turn unstructured complexity into decisions that teams can act on.
         </p>
         <div class="hero-links">
-          <a href="/projects">Projects</a>
-          <a href="/about">About</a>
+          <a href={getUrl('/projects')}>Projects</a>
+          <a href={getUrl('/about')}>About</a>
           <a href="mailto:hello@example.com">Contact</a>
         </div>
       </div>
@@ -69,28 +70,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <p class="section-kicker">Work</p>
       </div>
       <div class="project-list">
-        <a class="project-row" href="/projects/enterprise-journey-management-practice">
+        <a class="project-row" href={getUrl('/projects/enterprise-journey-management-practice')}>
           <span class="project-name">Enterprise Journey Management</span>
           <span class="project-tags"><span>UX Research</span><span>Service Design</span><span>Strategy</span></span>
         </a>
-        <a class="project-row" href="/projects/usps-mail-kiosks-bid-discovery">
+        <a class="project-row" href={getUrl('/projects/usps-mail-kiosks-bid-discovery')}>
           <span class="project-name">USPS Mail Kiosks</span>
           <span class="project-tags"><span>Discovery</span><span>Evaluation</span><span>Bid Support</span></span>
         </a>
-        <a class="project-row" href="/projects/core-pos-benchmarking-longitudinal-audit">
+        <a class="project-row" href={getUrl('/projects/core-pos-benchmarking-longitudinal-audit')}>
           <span class="project-name">Core POS Benchmarking</span>
           <span class="project-tags"><span>Benchmarking</span><span>Metrics</span><span>UX</span></span>
         </a>
-        <a class="project-row" href="/projects/go-to-market-deal-making-process-overhaul">
+        <a class="project-row" href={getUrl('/projects/go-to-market-deal-making-process-overhaul')}>
           <span class="project-name">Go-To-Market Process Overhaul</span>
           <span class="project-tags"><span>Research</span><span>Ops</span><span>Strategy</span></span>
         </a>
-        <a class="project-row" href="/projects/legacy-supply-chain-product-modernization">
+        <a class="project-row" href={getUrl('/projects/legacy-supply-chain-product-modernization')}>
           <span class="project-name">Legacy Supply Chain Modernization</span>
           <span class="project-tags"><span>Product</span><span>Transformation</span><span>Research</span></span>
         </a>
       </div>
-      <a class="all-link" href="/projects">All case studies <span aria-hidden="true">→</span></a>
+      <a class="all-link" href={getUrl('/projects')}>All case studies <span aria-hidden="true">→</span></a>
     </section>
 
     <section class="content-section journal-section">
@@ -99,15 +100,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <p class="section-kicker">Journal</p>
       </div>
       <div class="journal-list">
-        <a class="journal-item" href="/blog/portfolio-positioning">
+        <a class="journal-item" href={getUrl('/blog/portfolio-positioning')}>
           <span class="journal-date">Aug 29, 2026</span>
           <h3>Portfolio positioning and narrative clarity</h3>
         </a>
-        <a class="journal-item" href="/blog/research-methodology-reflection">
+        <a class="journal-item" href={getUrl('/blog/research-methodology-reflection')}>
           <span class="journal-date">Aug 20, 2026</span>
           <h3>Research methodology reflections</h3>
         </a>
-        <a class="journal-item" href="/blog/portfolio-positioning">
+        <a class="journal-item" href={getUrl('/blog/portfolio-positioning')}>
           <span class="journal-date">Aug 12, 2026</span>
           <h3>How service ecosystems shape research quality</h3>
         </a>

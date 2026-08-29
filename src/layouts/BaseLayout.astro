@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { getUrl } from '../utils/nav';
 const { title = 'Portfolio', description = 'Portfolio site' } = Astro.props;
 ---
 
@@ -15,13 +16,13 @@ const { title = 'Portfolio', description = 'Portfolio site' } = Astro.props;
     <div class="site-shell">
       <header class="topbar">
         <nav class="nav" aria-label="Main navigation">
-          <a class="brand-mark" href="/" aria-label="Home">H</a>
+          <a class="brand-mark" href={getUrl('/')} aria-label="Home">H</a>
           <div class="nav-spacer"></div>
           <div class="nav-links">
-            <a href="/">Home</a>
-            <a href="/projects">Projects</a>
-            <a href="/about">About</a>
-            <a href="/blog">Blog</a>
+            <a href={getUrl('/')}>Home</a>
+            <a href={getUrl('/projects')}>Projects</a>
+            <a href={getUrl('/about')}>About</a>
+            <a href={getUrl('/blog')}>Blog</a>
             <a href="mailto:hello@example.com">Contact</a>
           </div>
           <button class="nav-toggle" type="button" aria-label="Toggle menu">Menu</button>
@@ -35,15 +36,15 @@ const { title = 'Portfolio', description = 'Portfolio site' } = Astro.props;
         </div>
         <div class="footer-meta">
           <div class="footer-links">
-            <a href="/">Home</a>
-            <a href="/projects">Projects</a>
-            <a href="/about">About</a>
-            <a href="/blog">Blog</a>
+            <a href={getUrl('/')}>Home</a>
+            <a href={getUrl('/projects')}>Projects</a>
+            <a href={getUrl('/about')}>About</a>
+            <a href={getUrl('/blog')}>Blog</a>
           </div>
           <div class="footer-utility">
-            <a href="/">Style guide</a>
-            <a href="/">Licenses</a>
-            <a href="/">Changelog</a>
+            <a href={getUrl('/')}>Style guide</a>
+            <a href={getUrl('/')}>Licenses</a>
+            <a href={getUrl('/')}>Changelog</a>
           </div>
           <p>© 2026 Haley Gruensfelder</p>
         </div>

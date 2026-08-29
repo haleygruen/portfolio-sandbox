@@ -1,12 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getUrl } from '../../utils/nav';
 ---
 
 <BaseLayout title="Branding Studio MVP Validation" description="Project detail">
   <main class="page-shell project-detail-shell">
     <article class="project-detail">
       <div class="project-header">
-        <a href="/projects" class="back-link"><span aria-hidden="true">←</span> All case studies</a>
+        <a href={getUrl('/projects')} class="back-link"><span aria-hidden="true">←</span> All case studies</a>
         <h1>Branding Studio MVP Validation</h1>
         <p class="project-intro">Tested an early-stage studio offering with prospective customers to determine whether the offer matched real demand and delivery constraints.</p>
       </div>

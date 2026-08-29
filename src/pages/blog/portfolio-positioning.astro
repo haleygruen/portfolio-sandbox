@@ -1,12 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getUrl } from '../../utils/nav';
 ---
 
 <BaseLayout title="Portfolio positioning and narrative clarity" description="Blog post">
   <main class="page-shell blog-post-shell">
     <article class="blog-post">
       <div class="blog-post-header">
-        <a href="/blog" class="back-link"><span aria-hidden="true">←</span> Back to blog</a>
+        <a href={getUrl('/blog')} class="back-link"><span aria-hidden="true">←</span> Back to blog</a>
         <h1>Portfolio positioning and narrative clarity</h1>
       </div>
 

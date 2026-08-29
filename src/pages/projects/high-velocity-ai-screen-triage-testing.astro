@@ -1,12 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getUrl } from '../../utils/nav';
 ---
 
 <BaseLayout title="High-Velocity AI Screen Triage Testing" description="Project detail">
   <main class="page-shell project-detail-shell">
     <article class="project-detail">
       <div class="project-header">
-        <a href="/projects" class="back-link"><span aria-hidden="true">←</span> All case studies</a>
+        <a href={getUrl('/projects')} class="back-link"><span aria-hidden="true">←</span> All case studies</a>
         <h1>High-Velocity AI Screen Triage Testing</h1>
         <p class="project-intro">Evaluated how AI-supported triage workflows performed under high-volume, time-constrained conditions to inform product readiness and confidence.</p>
       </div>

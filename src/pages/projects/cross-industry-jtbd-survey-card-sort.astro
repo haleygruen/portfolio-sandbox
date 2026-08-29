@@ -1,12 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getUrl } from '../../utils/nav';
 ---
 
 <BaseLayout title="Cross-Industry JTBD Survey & Card Sort" description="Project detail">
   <main class="page-shell project-detail-shell">
     <article class="project-detail">
       <div class="project-header">
-        <a href="/projects" class="back-link"><span aria-hidden="true">←</span> All case studies</a>
+        <a href={getUrl('/projects')} class="back-link"><span aria-hidden="true">←</span> All case studies</a>
         <h1>Cross-Industry JTBD Survey & Card Sort</h1>
         <p class="project-intro">Ran a multi-industry research study to surface patterns in customer jobs, pains, and priorities across different operational contexts.</p>
       </div>
