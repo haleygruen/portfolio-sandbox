@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getUrl } from '../utils/nav';
+---
+
+<BaseLayout title="Framework visual options" description="Visual directions for the Enterprise Journey case study">
+  <main class="page-shell project-detail-shell">
+    <article class="project-detail">
+      <div class="project-header">
+        <a href={getUrl('/projects/enterprise-journey-management-practice')} class="back-link"><span aria-hidden="true">←</span> Enterprise Journey case study</a>
+        <h1>Framework visual options</h1>
+        <p class="project-intro">Three public-safe directions for the first conceptual diagram. These are previews only and are not yet connected to the case study.</p>
+      </div>
+
+      <div class="project-content">
+        <figure class="case-study-artifact case-study-artifact--preview">
+          <div class="artifact-label">Option A / Editorial storyboard</div>
+          <img src={getUrl('/framework-option-editorial.svg')} alt="Three colored panels for shopper and store, back-of-house, and commercial lifecycle connected by a shared taxonomy." />
+          <figcaption>Warm, illustrated, and closest to the supplied reference image.</figcaption>
+        </figure>
+
+        <figure class="case-study-artifact case-study-artifact--preview">
+          <div class="artifact-label">Option B / Systems map</div>
+          <img src={getUrl('/framework-option-system.svg')} alt="Three journey domains surrounding a central shared taxonomy node." />
+          <figcaption>More strategic and enterprise-oriented, with the taxonomy as the focal point.</figcaption>
+        </figure>
+
+        <figure class="case-study-artifact case-study-artifact--preview">
+          <div class="artifact-label">Option C / Layered service blueprint</div>
+          <img src={getUrl('/framework-option-blueprint.svg')} alt="Three horizontal layers for shopper and in-store experience, back-of-house operations, and business operations joined by a shared taxonomy rail." />
+          <figcaption>Most explicit about the relationship between customer experience and the systems behind it.</figcaption>
+        </figure>
+
+        <figure class="case-study-artifact case-study-artifact--preview">
+          <div class="artifact-label">Option C1 / Cool palette</div>
+          <img src={getUrl('/framework-option-blueprint-cool.svg')} alt="The layered service blueprint in a cool blue-green palette." />
+          <figcaption>Quieter and more systems-oriented, with a cooler enterprise feel.</figcaption>
+        </figure>
+
+        <figure class="case-study-artifact case-study-artifact--preview">
+          <div class="artifact-label">Option C2 / Sunlit palette</div>
+          <img src={getUrl('/framework-option-blueprint-sunlit.svg')} alt="The layered service blueprint in a warm sunlit palette." />
+          <figcaption>Brighter and more human, with stronger warmth between the layers.</figcaption>
+        </figure>
+
+        <figure class="case-study-artifact case-study-artifact--preview">
+          <div class="artifact-label">Option D / Radial system map</div>
+          <img src={getUrl('/framework-option-radial.svg')} alt="A polished radial map connecting three operating domains to a shared taxonomy." />
+          <figcaption>Uses the vivid palette with a polished central relationship.</figcaption>
+        </figure>
+
+        <figure class="case-study-artifact case-study-artifact--preview">
+          <div class="artifact-label">Option E / Numbered operating lenses</div>
+          <img src={getUrl('/framework-option-list.svg')} alt="A dark numbered list explaining three operating domains connected by a shared taxonomy rail." />
+          <figcaption>Uses the clean list layout for fast scanning and comparison.</figcaption>
+        </figure>
+
+        <figure class="case-study-artifact case-study-artifact--preview">
+          <div class="artifact-label">Option F / Connected domains</div>
+          <img src={getUrl('/framework-option-overlap.svg')} alt="Three overlapping colored circles representing connected operating domains and a shared taxonomy." />
+          <figcaption>Uses overlap to show where the three operating lenses meet.</figcaption>
+        </figure>
+
+        <figure class="case-study-artifact case-study-artifact--preview">
+          <div class="artifact-label">Option G / Hierarchical journey map</div>
+          <img src={getUrl('/framework-option-hierarchy.svg')} alt="A polished hierarchy connecting a shared taxonomy to three operating domains and representative journey examples." />
+          <figcaption>Uses levels, tags, and a highlighted path to make the system traceable.</figcaption>
+        </figure>
+      </div>
+    </article>
+  </main>
+</BaseLayout>

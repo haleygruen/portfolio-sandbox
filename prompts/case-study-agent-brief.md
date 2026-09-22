@@ -52,12 +52,15 @@ Use this page structure unless the source clearly calls for a small adaptation:
 - Hero image below the back link and above the title
 - Title and one-sentence introduction
 - Client, role, and focus metadata
-- Context/problem
-- My contribution
-- Discovery or approach
-- Findings
+- Standard case-study timeline: Context, Approach, Decisions, Findings, Outcome, Reflection
+- Keep the timeline labels consistent across portfolio pages; use project-specific language as subheadings within those sections.
+- Put my role and collaborators in the metadata and in the relevant approach or decision narrative, rather than making "Contribution" a standalone early stage by default.
+- Context/problem and constraints
+- Approach and my role in the work
+- Consequential decisions and tradeoffs
+- Findings and evidence
 - Outcome
-- What I learned
+- Reflection: what I would preserve, revisit, or investigate
 
 Images and placeholders:
 

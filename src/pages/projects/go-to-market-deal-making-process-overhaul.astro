@@ -30,23 +30,36 @@ import { getUrl } from '../../utils/nav';
         </div>
       </div>
 
+      <nav class="project-timeline" aria-label="Case study sections">
+        <span class="timeline-line" aria-hidden="true"></span>
+        <a href="#context"><span class="timeline-dot" aria-hidden="true"></span><span>Context</span></a>
+        <a href="#approach"><span class="timeline-dot" aria-hidden="true"></span><span>Approach</span></a>
+        <a href="#decisions"><span class="timeline-dot" aria-hidden="true"></span><span>Decisions</span></a>
+        <a href="#findings"><span class="timeline-dot" aria-hidden="true"></span><span>Findings</span></a>
+        <a href="#outcome"><span class="timeline-dot" aria-hidden="true"></span><span>Outcome</span></a>
+        <a href="#reflection"><span class="timeline-dot" aria-hidden="true"></span><span>Reflection</span></a>
+      </nav>
+
       <div class="project-content">
-        <section class="content-section">
+        <section class="content-section" id="context">
+          <span class="section-marker">Context</span>
           <h2>Giving a transformation effort a shared view of the work</h2>
           <p>A commercial organization knew that its customer-facing teams were losing time to administrative tasks, unclear handoffs, and inconsistent processes. It did not have a shared view of the complete experience, from first customer conversation through onboarding, billing, and ongoing support.</p>
           <p>Service Design was asked to help make the work visible: understand where friction accumulated, align the people responsible for different parts of the journey, and identify practical opportunities for improvement under a short timeline.</p>
         </section>
 
-        <section class="content-section">
-          <h2>My contribution</h2>
+        <section class="content-section" id="approach">
+          <span class="section-marker">Approach</span>
+          <h2>Starting with the people closest to the work</h2>
           <p>I worked across discovery, workshop design, facilitation, synthesis, and final deliverables. I conducted pre-work stakeholder interviews; designed the templates and facilitation materials; co-facilitated small-group sessions; captured and organized evidence during the working sessions; and helped turn the output into a clear, usable journey map.</p>
           <p>The effort brought together more than 30 participants from customer-facing, operational, and technical functions. My job was to help a diverse group describe a complex process in a common language and move from individual frustrations toward shared priorities.</p>
+          <p>Before the workshop, we interviewed stakeholders across the commercial lifecycle to understand tensions before asking a large group to map them together. We then connected the work across five broad phases: customer acquisition, sales engagement, implementation, billing, and ongoing use and support.</p>
         </section>
 
         <figure class="case-study-artifact">
           <div class="artifact-label">Visual placeholder</div>
           <div class="artifact-content">
-            <span class="artifact-index">02</span>
+            <span class="artifact-index">01</span>
             <div>
               <strong>Workshop scaffolding</strong>
               <p>Replace with a recreated facilitation framework or conceptual process diagram, not a photograph or export from the original session.</p>
@@ -55,28 +68,24 @@ import { getUrl } from '../../utils/nav';
           <figcaption>Future workshop or journey-mapping visual.</figcaption>
         </figure>
 
-        <section class="content-section">
-          <h2>From fragmented views to a single journey</h2>
-          <p>Before the workshop, we interviewed stakeholders across the commercial lifecycle to understand tensions before asking a large group to map them together. A consistent pattern emerged: information, ownership, and decision-making often broke down at the boundaries between teams.</p>
-          <p>The resulting journey connected five broad phases: customer acquisition, sales engagement, implementation, billing, and ongoing use and support. Rather than treating problems as isolated incidents, we placed recurring friction at the moments where it occurred and used that evidence to guide the discussion.</p>
+        <section class="content-section" id="decisions">
+          <span class="section-marker">Decisions</span>
+          <h2>Mapping the boundaries, not blaming the teams</h2>
+          <p>A consistent pattern emerged: information, ownership, and decision-making often broke down at the boundaries between teams. Rather than treating problems as isolated incidents or failures of individual groups, we placed recurring friction at the moments where it occurred in the journey.</p>
+          <p>This framing gave the workshop a practical choice to work through: which opportunities could be owned together, and which required a change in handoff, decision rule, or role. It kept the discussion grounded in observable work while making room for improvements beyond any one team's control.</p>
         </section>
 
-        <section class="content-section">
-          <h2>What we learned</h2>
+        <section class="content-section" id="findings">
+          <span class="section-marker">Findings</span>
+          <h2>Where friction accumulated</h2>
           <p>Three themes recurred across the journey. First, early administrative steps created delays before customer-facing teams could make progress. Second, fragmented tools and inconsistent decision rules made it difficult to produce timely, reliable commercial proposals. Finally, information captured before a sale did not always travel cleanly into delivery, leaving customers and teams to repeat work after the handoff.</p>
-          <p>Framing these issues as structural process and role-design challenges, rather than failures of individual teams, helped the group identify improvements they could own together.</p>
-        </section>
-
-        <section class="content-section">
-          <h2>Outcome</h2>
-          <p>The work produced a validated, end-to-end journey map and a prioritized set of improvement opportunities, each anchored to a specific point in the experience. The artifact gave the transformation team a traceable evidence base for discussing where to simplify work, clarify ownership, and improve continuity for customers.</p>
-          <p>Over time, the organization introduced changes that aligned with the journey's recommendations, including simplifying commercial workflows and strengthening the bridge between sales and delivery. While this project was one input among many, it established a shared baseline for the work and a practical way to keep the conversation grounded in the people doing it.</p>
+          <p>These findings came from stakeholder interviews and the cross-functional mapping sessions. They were useful because each theme was anchored to a specific point in the journey, giving the transformation team a shared basis for prioritization rather than a list of disconnected complaints.</p>
         </section>
 
         <figure class="case-study-artifact">
           <div class="artifact-label">Visual placeholder</div>
           <div class="artifact-content">
-            <span class="artifact-index">03</span>
+            <span class="artifact-index">02</span>
             <div>
               <strong>Opportunity map</strong>
               <p>Replace with an original diagram showing generalized journey phases, friction points, and opportunities without internal terminology or data.</p>
@@ -85,8 +94,16 @@ import { getUrl } from '../../utils/nav';
           <figcaption>Future opportunity-placement visual.</figcaption>
         </figure>
 
-        <section class="content-section">
-          <h2>What I learned</h2>
+        <section class="content-section" id="outcome">
+          <span class="section-marker">Outcome</span>
+          <h2>Outcome</h2>
+          <p>The work produced a validated, end-to-end journey map and a prioritized set of improvement opportunities, each anchored to a specific point in the experience. The artifact gave the transformation team a traceable evidence base for discussing where to simplify work, clarify ownership, and improve continuity for customers.</p>
+          <p>Over time, the organization introduced changes that aligned with the journey's recommendations, including simplifying commercial workflows and strengthening the bridge between sales and delivery. While this project was one input among many, it established a shared baseline for the work and a practical way to keep the conversation grounded in the people doing it.</p>
+        </section>
+
+        <section class="content-section" id="reflection">
+          <span class="section-marker">Reflection</span>
+          <h2>What I would carry forward</h2>
           <p>This was a formative example of Service Design as business design. I learned how to build enough structure for a large, cross-functional group to synthesize together, capture notes for analysis rather than archival purposes, and create deliverables that can support consequential conversations without oversimplifying the complexity underneath them.</p>
         </section>
       </div>

@@ -38,8 +38,8 @@ import { getUrl } from '../../utils/nav';
         <span class="timeline-line" aria-hidden="true"></span>
         <a href="#context"><span class="timeline-dot" aria-hidden="true"></span><span>Context</span></a>
         <a href="#contribution"><span class="timeline-dot" aria-hidden="true"></span><span>Contribution</span></a>
-        <a href="#framework"><span class="timeline-dot" aria-hidden="true"></span><span>Framework</span></a>
-        <a href="#adoption"><span class="timeline-dot" aria-hidden="true"></span><span>Adoption</span></a>
+        <a href="#framework"><span class="timeline-dot" aria-hidden="true"></span><span>Approach</span></a>
+        <a href="#adoption"><span class="timeline-dot" aria-hidden="true"></span><span>Making it stick</span></a>
         <a href="#delivery"><span class="timeline-dot" aria-hidden="true"></span><span>Delivery</span></a>
         <a href="#outcome"><span class="timeline-dot" aria-hidden="true"></span><span>Outcome</span></a>
         <a href="#learning"><span class="timeline-dot" aria-hidden="true"></span><span>Learning</span></a>
@@ -61,22 +61,16 @@ import { getUrl } from '../../utils/nav';
         </section>
 
         <section class="content-section" id="framework">
-          <span class="section-marker">Framework</span>
+          <span class="section-marker">Approach</span>
           <h2>Three domains, one shared language</h2>
           <p>We organized the workspace around three journey frameworks: the shopper and store experience, the retailer's back-of-house operations, and the commercial lifecycle behind product delivery. Each framework held distinct journeys, while a shared taxonomy made evidence comparable across domains.</p>
           <p>Insights could be viewed through multiple lenses, including product, customer segment, research method, persona, location, confidence, source, competitive context, and priority. The taxonomy lived in a guide that the team maintained and the intake workflow referenced directly.</p>
         </section>
 
-        <figure class="case-study-artifact">
-          <div class="artifact-label">Visual placeholder</div>
-          <div class="artifact-content">
-            <span class="artifact-index">01</span>
-            <div>
-              <strong>Three framework domains</strong>
-              <p>Recreate as an original conceptual diagram showing shopper and store experience, back-of-house operations, and the commercial lifecycle unified by a shared taxonomy.</p>
-            </div>
-          </div>
-          <figcaption>Conceptual overview of the multi-domain journey structure.</figcaption>
+        <figure class="case-study-artifact case-study-artifact--visual">
+          <div class="artifact-label">Layered service blueprint</div>
+          <img src={getUrl('/framework-option-blueprint.svg')} alt="Three horizontal layers for shopper and in-store experience, back-of-house operations, and business operations joined by a shared taxonomy rail." />
+          <figcaption>Conceptual view of the three journey domains and the shared language that makes evidence comparable across them.</figcaption>
         </figure>
 
         <figure class="case-study-artifact">
@@ -92,7 +86,7 @@ import { getUrl } from '../../utils/nav';
         </figure>
 
         <section class="content-section" id="adoption">
-          <span class="section-marker">Adoption</span>
+          <span class="section-marker">Making it stick</span>
           <h2>Removing the adoption bottleneck</h2>
           <p>Initially, researchers read notes or transcripts and manually created each insight, applying its type, status, product, and persona links. The work was slow enough to suppress participation and inconsistent enough to make cross-study synthesis harder.</p>
           <p>We shifted the effort from data entry to review. A researcher could submit a study through a structured intake, after which an AI-assisted workflow extracted findings, classified them against the taxonomy, suggested personas, flagged gaps, and created linked insight records. Intake moved from hours toward minutes, while researchers retained responsibility for judgment and quality.</p>
