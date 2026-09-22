@@ -138,10 +138,10 @@ import { getUrl } from '../utils/nav';
           </div>
         </a>
         <a class="work-card" href={getUrl('/projects/go-to-market-deal-making-process-overhaul')}>
-          <div class="work-thumb thumb-2"></div>
+          <div class="work-thumb thumb-2" style={`background-image: url('${getUrl('/pexels-blue-33681373-2.jpg')}')`}></div>
           <div class="work-meta">
             <div class="work-topline">Research · Service Design · Strategy</div>
-            <h3>Go-To-Market Process Overhaul</h3>
+            <h3>Go-to-Market Process Overhaul</h3>
           </div>
         </a>
         <a class="work-card" href={getUrl('/projects/usps-mail-kiosks-bid-discovery')}>
@@ -167,6 +167,40 @@ import { getUrl } from '../utils/nav';
         <span class="section-mark">●</span>
         <p class="section-kicker">How I Work</p>
       </div>
+
+      <div class="process-flow">
+        <div class="process-step">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 8v4l3 2"></path>
+            </svg>
+          </div>
+          <p class="step-label">Start with<br/>the problem</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12h2m14 0h2"></path>
+              <path d="M12 3v2m0 14v2"></path>
+              <circle cx="12" cy="12" r="6"></circle>
+              <path d="M12 12h6"></path>
+            </svg>
+          </div>
+          <p class="step-label">Understand<br/>the system</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+          </div>
+          <p class="step-label">Find the<br/>opportunity</p>
+        </div>
+      </div>
+
       <div class="services-intro">
         <h2>Start with the problem. Understand the system. Find the opportunity.</h2>
         <p>

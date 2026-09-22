@@ -3,12 +3,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getUrl } from '../../utils/nav';
 ---
 
-<BaseLayout title="Commercial Journey Transformation" description="Cross-functional service-design case study">
+<BaseLayout title="Go-to-Market Process Overhaul" description="Cross-functional service-design case study">
   <main class="page-shell project-detail-shell">
     <article class="project-detail">
       <div class="project-header">
         <a href={getUrl('/projects')} class="back-link"><span aria-hidden="true">←</span> All case studies</a>
-        <h1>Commercial Journey Transformation</h1>
+        <figure class="case-study-hero">
+          <img src={getUrl('/pexels-blue-33681373-2.jpg')} alt="A train moving through a city business district" />
+        </figure>
+        <h1>Go-to-Market Process Overhaul</h1>
         <p class="project-intro">Mapped a complex commercial journey to surface the operational friction keeping customer-facing teams from spending time with customers.</p>
       </div>
 
@@ -40,6 +43,18 @@ import { getUrl } from '../../utils/nav';
           <p>The effort brought together more than 30 participants from customer-facing, operational, and technical functions. My job was to help a diverse group describe a complex process in a common language and move from individual frustrations toward shared priorities.</p>
         </section>
 
+        <figure class="case-study-artifact">
+          <div class="artifact-label">Visual placeholder</div>
+          <div class="artifact-content">
+            <span class="artifact-index">02</span>
+            <div>
+              <strong>Workshop scaffolding</strong>
+              <p>Replace with a recreated facilitation framework or conceptual process diagram, not a photograph or export from the original session.</p>
+            </div>
+          </div>
+          <figcaption>Future workshop or journey-mapping visual.</figcaption>
+        </figure>
+
         <section class="content-section">
           <h2>From fragmented views to a single journey</h2>
           <p>Before the workshop, we interviewed stakeholders across the commercial lifecycle to understand tensions before asking a large group to map them together. A consistent pattern emerged: information, ownership, and decision-making often broke down at the boundaries between teams.</p>
@@ -57,6 +72,18 @@ import { getUrl } from '../../utils/nav';
           <p>The work produced a validated, end-to-end journey map and a prioritized set of improvement opportunities, each anchored to a specific point in the experience. The artifact gave the transformation team a traceable evidence base for discussing where to simplify work, clarify ownership, and improve continuity for customers.</p>
           <p>Over time, the organization introduced changes that aligned with the journey's recommendations, including simplifying commercial workflows and strengthening the bridge between sales and delivery. While this project was one input among many, it established a shared baseline for the work and a practical way to keep the conversation grounded in the people doing it.</p>
         </section>
+
+        <figure class="case-study-artifact">
+          <div class="artifact-label">Visual placeholder</div>
+          <div class="artifact-content">
+            <span class="artifact-index">03</span>
+            <div>
+              <strong>Opportunity map</strong>
+              <p>Replace with an original diagram showing generalized journey phases, friction points, and opportunities without internal terminology or data.</p>
+            </div>
+          </div>
+          <figcaption>Future opportunity-placement visual.</figcaption>
+        </figure>
 
         <section class="content-section">
           <h2>What I learned</h2>

@@ -22,7 +22,11 @@ body {
   color: var(--ink);
 }
 
-img { max-width: 100%; display: block; }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 a { color: inherit; text-decoration: none; }
 
@@ -322,6 +326,11 @@ h1 {
   background: linear-gradient(135deg, rgba(180, 200, 255, 0.18), rgba(255,255,255,0.04)), radial-gradient(circle at 70% 30%, rgba(255,255,255,0.18), transparent 35%);
 }
 
+.work-thumb.thumb-2 {
+  background-size: 100% auto;
+  background-position: center 25%;
+}
+
 .thumb-3 {
   background: linear-gradient(135deg, rgba(255, 214, 153, 0.22), rgba(255,255,255,0.04)), radial-gradient(circle at 30% 75%, rgba(255,255,255,0.16), transparent 30%);
 }
@@ -458,6 +467,12 @@ h1 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 2rem 3rem;
+}
+
+body:has(.project-detail) .page-footer {
+  max-width: 900px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .cta-panel {
@@ -790,6 +805,7 @@ h1 {
 
 .project-detail {
   max-width: 900px;
+  margin: 0 auto;
 }
 
 .back-link {
@@ -871,9 +887,105 @@ h1 {
   gap: 2rem;
 }
 
+.project-timeline {
+  position: fixed;
+  top: 50%;
+  left: 1.5rem;
+  width: 7rem;
+  display: grid;
+  gap: 1.45rem;
+  padding: 0.25rem 0;
+  transform: translateY(-50%);
+}
+
+.project-utility-nav {
+  position: fixed;
+  top: 5.5rem;
+  left: 1.5rem;
+  z-index: 10;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.project-utility-nav .back-link,
+.top-link {
+  width: max-content;
+  margin: 0;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.68rem;
+}
+
+.top-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+}
+
+.top-link:hover {
+  color: var(--ink);
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0.45rem;
+  bottom: 0.45rem;
+  left: 0.22rem;
+  width: 1px;
+  background: var(--border);
+}
+
+.project-timeline a {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--muted-soft);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: color 160ms ease;
+}
+
+.project-timeline a:hover,
+.project-timeline a:focus-visible {
+  color: var(--ink);
+}
+
+.timeline-dot {
+  flex: 0 0 auto;
+  width: 0.48rem;
+  height: 0.48rem;
+  border: 1px solid var(--muted-soft);
+  border-radius: 50%;
+  background: var(--bg);
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.project-timeline a:hover .timeline-dot,
+.project-timeline a:focus-visible .timeline-dot {
+  border-color: var(--brand);
+  background: var(--brand);
+  transform: scale(1.25);
+}
+
 .content-section {
   display: grid;
   gap: 1rem;
+  scroll-margin-top: 10rem;
+}
+
+.section-marker {
+  color: var(--brand);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .content-section h2 {
@@ -889,6 +1001,68 @@ h1 {
   color: var(--muted);
   font-size: 1.08rem;
   line-height: 1.8;
+}
+
+.case-study-hero {
+  margin: 0 0 2rem;
+  overflow: hidden;
+  background: var(--panel);
+  border: 1px solid var(--border);
+}
+
+.case-study-hero img {
+  width: 100%;
+  height: auto;
+}
+
+.case-study-artifact {
+  margin: 0;
+  min-height: 15rem;
+  padding: 1.5rem;
+  display: grid;
+  align-content: space-between;
+  gap: 2rem;
+  border: 1px dashed rgba(217, 208, 194, 0.44);
+  background: linear-gradient(135deg, rgba(217, 208, 194, 0.1), transparent 60%);
+}
+
+.artifact-label {
+  color: var(--muted-soft);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.artifact-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  max-width: 42rem;
+}
+
+.artifact-index {
+  color: var(--brand);
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.artifact-content strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.artifact-content p,
+.case-study-artifact figcaption {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.case-study-artifact figcaption {
+  font-size: 0.78rem;
 }
 
 .contact-shell {
@@ -1047,7 +1221,18 @@ h1 {
   line-height: 1.8;
 }
 
+@media (max-width: 960px) {
+  .project-timeline {
+    display: none;
+  }
+}
+
 @media (max-width: 860px) {
+  .project-utility-nav {
+    top: 5rem;
+    left: 1rem;
+  }
+
   .services-grid,
   .journal-list,
   .project-meta-grid {
@@ -1086,20 +1271,108 @@ h1 {
   }
 
   .nav-toggle {
-    display: inline-flex;
+    display: block;
   }
 
-  .page-shell,
-  .page-footer {
+  .project-detail-shell {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .home-shell {
-    padding-top: 2rem;
+  .project-utility-nav {
+    right: 1rem;
   }
 
-  .project-name {
-    font-size: 2rem;
+}
+
+.process-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0 3.5rem;
+  flex-wrap: wrap;
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 0 0 auto;
+}
+
+.step-icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+
+.step-icon svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.step-label {
+  margin: 0;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--muted);
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+
+.process-connector {
+  width: 2rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.process-connector::after {
+  content: '';
+  position: absolute;
+  right: -0.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 1.5px solid var(--border);
+  border-top: 1.5px solid var(--border);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+@media (max-width: 768px) {
+  .process-flow {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2.5rem 0 3rem;
+  }
+
+  .process-connector {
+    width: 1px;
+    height: 1.5rem;
+    background: linear-gradient(180deg, transparent, var(--border), transparent);
+  }
+
+  .process-connector::after {
+    right: 50%;
+    top: auto;
+    bottom: -0.4rem;
+    transform: translateX(50%) rotate(45deg);
+  }
+
+  .step-label {
+    font-size: 0.9rem;
   }
 }
+
+

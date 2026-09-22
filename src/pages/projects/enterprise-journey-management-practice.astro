@@ -3,39 +3,144 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getUrl } from '../../utils/nav';
 ---
 
-<BaseLayout title="Enterprise Journey Management Practice" description="Project detail">
-  <main class="page-shell project-detail-shell">
+<BaseLayout title="Enterprise Journey Management Practice" description="Service Design case study on building a research-to-delivery practice">
+  <main id="top" class="page-shell project-detail-shell">
     <article class="project-detail">
       <div class="project-header">
-        <a href={getUrl('/projects')} class="back-link"><span aria-hidden="true">←</span> All case studies</a>
+        <figure class="case-study-hero">
+          <img src={getUrl('/pexels-denitsa-kireva-2915302-18169907-2.jpg')} alt="Aerial view of a river delta with branching channels" />
+        </figure>
         <h1>Enterprise Journey Management Practice</h1>
-        <p class="project-intro">Co-managed taxonomy and enablement work to standardize how research insights mapped to design decisions and platform-wide improvements.</p>
+        <p class="project-intro">Co-built a living research practice that made customer evidence accessible and traceable across a complex product organization.</p>
       </div>
 
       <div class="project-meta-grid">
         <div class="meta-item">
           <span class="meta-label">Client:</span>
-          <span class="meta-value">Enterprise research ops</span>
+          <span class="meta-value">Global enterprise software company</span>
         </div>
         <div class="meta-item">
           <span class="meta-label">Role:</span>
-          <span class="meta-value">Co-manager of taxonomy & enablement lead</span>
+          <span class="meta-value">Co-creator; taxonomy architecture and intake enablement</span>
         </div>
         <div class="meta-item">
           <span class="meta-label">Focus:</span>
-          <span class="meta-value">Taxonomies, adoption, TheyDo frameworks</span>
-        </div>
-        <div class="meta-item">
-          <span class="meta-label">Preview:</span>
-          <a href="#" class="meta-link">View project →</a>
+          <span class="meta-value">Research operations, journey management, adoption, AI-assisted workflows</span>
         </div>
       </div>
 
+      <nav class="project-utility-nav" aria-label="Page controls">
+        <a href={getUrl('/projects')} class="back-link"><span aria-hidden="true">←</span> All case studies</a>
+        <a href="#top" class="top-link"><span aria-hidden="true">↑</span> Back to top</a>
+      </nav>
+
+      <nav class="project-timeline" aria-label="Case study sections">
+        <span class="timeline-line" aria-hidden="true"></span>
+        <a href="#context"><span class="timeline-dot" aria-hidden="true"></span><span>Context</span></a>
+        <a href="#contribution"><span class="timeline-dot" aria-hidden="true"></span><span>Contribution</span></a>
+        <a href="#framework"><span class="timeline-dot" aria-hidden="true"></span><span>Framework</span></a>
+        <a href="#adoption"><span class="timeline-dot" aria-hidden="true"></span><span>Adoption</span></a>
+        <a href="#delivery"><span class="timeline-dot" aria-hidden="true"></span><span>Delivery</span></a>
+        <a href="#outcome"><span class="timeline-dot" aria-hidden="true"></span><span>Outcome</span></a>
+        <a href="#learning"><span class="timeline-dot" aria-hidden="true"></span><span>Learning</span></a>
+      </nav>
+
       <div class="project-content">
-        <section class="content-section">
-          <h2>Standardizing insight mapping and cross-functional adoption</h2>
-          <p>The challenge was to create a common language and taxonomy that would help teams move research insights into actionable design decisions. This required building both the framework and the cultural change to support it across an organization with many legacy practices.</p>
-          <p>By establishing clear taxonomies and enablement practices, we created a single source of truth for how insights were documented, shared, and applied to product and service improvements.</p>
+        <section class="content-section" id="context">
+          <span class="section-marker">Context</span>
+          <h2>When research disappeared after handoff</h2>
+          <p>Research was happening across a complex product organization with multiple customer workflows, teams, and delivery cadences. Findings and recommendations often disappeared into documents after handoff, leaving no reliable trail from customer evidence to a design decision.</p>
+          <p>The challenge was not simply to design a more complete repository. Early manual mapping showed that adoption was the real constraint: teams used the system when it was easy and skipped it when intake felt like duplicate work.</p>
+        </section>
+
+        <section class="content-section" id="contribution">
+          <span class="section-marker">Contribution</span>
+          <h2>My contribution</h2>
+          <p>I co-created the practice with a Service Design Lead. While my partner drove strategy and vision, I owned the taxonomy and day-to-day architecture: the classification system, the AI-assisted research intake workflow, the living taxonomy guide, and the research-intake relationship across the product organization.</p>
+          <p>That work combined system design, research operations, enablement, and adoption strategy. The goal was a practice rigorous enough to scale across many journeys and lightweight enough for researchers to use consistently.</p>
+        </section>
+
+        <section class="content-section" id="framework">
+          <span class="section-marker">Framework</span>
+          <h2>Three domains, one shared language</h2>
+          <p>We organized the workspace around three journey frameworks: the shopper and store experience, the retailer's back-of-house operations, and the commercial lifecycle behind product delivery. Each framework held distinct journeys, while a shared taxonomy made evidence comparable across domains.</p>
+          <p>Insights could be viewed through multiple lenses, including product, customer segment, research method, persona, location, confidence, source, competitive context, and priority. The taxonomy lived in a guide that the team maintained and the intake workflow referenced directly.</p>
+        </section>
+
+        <figure class="case-study-artifact">
+          <div class="artifact-label">Visual placeholder</div>
+          <div class="artifact-content">
+            <span class="artifact-index">01</span>
+            <div>
+              <strong>Three framework domains</strong>
+              <p>Recreate as an original conceptual diagram showing shopper and store experience, back-of-house operations, and the commercial lifecycle unified by a shared taxonomy.</p>
+            </div>
+          </div>
+          <figcaption>Conceptual overview of the multi-domain journey structure.</figcaption>
+        </figure>
+
+        <figure class="case-study-artifact">
+          <div class="artifact-label">Visual placeholder</div>
+          <div class="artifact-content">
+            <span class="artifact-index">02</span>
+            <div>
+              <strong>Taxonomy filter and tag interface</strong>
+              <p>Recreate as a faceted-search style diagram showing product, segment, method, persona, location, and confidence filters without internal labels or data.</p>
+            </div>
+          </div>
+          <figcaption>Conceptual taxonomy interface for finding connected evidence.</figcaption>
+        </figure>
+
+        <section class="content-section" id="adoption">
+          <span class="section-marker">Adoption</span>
+          <h2>Removing the adoption bottleneck</h2>
+          <p>Initially, researchers read notes or transcripts and manually created each insight, applying its type, status, product, and persona links. The work was slow enough to suppress participation and inconsistent enough to make cross-study synthesis harder.</p>
+          <p>We shifted the effort from data entry to review. A researcher could submit a study through a structured intake, after which an AI-assisted workflow extracted findings, classified them against the taxonomy, suggested personas, flagged gaps, and created linked insight records. Intake moved from hours toward minutes, while researchers retained responsibility for judgment and quality.</p>
+        </section>
+
+        <section class="content-section" id="delivery">
+          <span class="section-marker">Delivery</span>
+          <h2>Closing the loop from evidence to delivery</h2>
+          <p>Insights lived on journey steps and phases rather than in disconnected decks. Prioritized opportunities became solutions owned by product teams, while UX maintained the evidence. This created a traceable chain from research to insight, opportunity, solution, and delivery.</p>
+          <p>The shared model gave stakeholders a way to answer not only what customers said, but where in the experience it mattered and what decision followed. It also made the return on research more visible because the path from study to shipped work could be followed.</p>
+        </section>
+
+        <figure class="case-study-artifact">
+          <div class="artifact-label">Visual placeholder</div>
+          <div class="artifact-content">
+            <span class="artifact-index">03</span>
+            <div>
+              <strong>Research-to-solution flow</strong>
+              <p>Recreate as an original flow diagram: Research study → Insight on journey → Prioritized opportunity → Solution → Delivery and learning.</p>
+            </div>
+          </div>
+          <figcaption>Conceptual path from customer evidence to product decisions.</figcaption>
+        </figure>
+
+        <section class="content-section" id="outcome">
+          <span class="section-marker">Outcome</span>
+          <h2>What changed</h2>
+          <p>The practice grew across dozens of journeys, thousands of insights, and hundreds of opportunities. A core UX group maintained it, while product and adjacent teams used the shared evidence in planning and decision-making.</p>
+          <p>When an executive request arrived for a consolidated view of existing research, the team could produce a same-day synthesis instead of manually reconstructing the record over several days. The response made the value of a living research system tangible: leadership could ask a question and receive an evidence-backed view quickly.</p>
+        </section>
+
+        <figure class="case-study-artifact">
+          <div class="artifact-label">Visual placeholder</div>
+          <div class="artifact-content">
+            <span class="artifact-index">04</span>
+            <div>
+              <strong>Stakeholder response to same-day synthesis</strong>
+              <p>Create a public-safe portrait or pull-quote-style visual that conveys executive recognition of faster, more usable research. Do not publish the original quote or identity.</p>
+            </div>
+          </div>
+          <figcaption>Sanitized visual for the moment the practice proved its value.</figcaption>
+        </figure>
+
+        <section class="content-section" id="learning">
+          <span class="section-marker">Learning</span>
+          <h2>What I learned</h2>
+          <p>Adoption was harder than system design. The clearest signals of success were behavioral: teams referenced journeys in planning, asked to add findings, and used the shared language without needing the practice team to translate it for them.</p>
+          <p>The next phase is to deepen integration, expand persona coverage, distribute ownership, and surface research gaps before projects begin. The infrastructure matters because it helps people act on evidence while it is still useful.</p>
         </section>
       </div>
     </article>
